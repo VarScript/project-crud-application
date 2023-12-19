@@ -1,0 +1,19 @@
+[0;1;32m●[0m mysqld.service - MySQL Server
+     Loaded: loaded (]8;;file://var/usr/lib/systemd/system/mysqld.service/usr/lib/systemd/system/mysqld.service]8;;; [0;1;32menabled[0m; preset: [0;1;38;5;185mdisabled[0m)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─]8;;file://var/usr/lib/systemd/system/service.d/10-timeout-abort.conf10-timeout-abort.conf]8;;
+     Active: [0;1;32mactive (running)[0m since Mon 2023-12-18 18:38:21 -05; 17min ago
+       Docs: ]8;;man:mysqld(8)man:mysqld(8)]8;;
+             ]8;;http://dev.mysql.com/doc/refman/en/using-systemd.htmlhttp://dev.mysql.com/doc/refman/en/using-systemd.html]8;;
+    Process: 1669 ExecStartPre=/usr/bin/mysqld_pre_systemd (code=exited, status=0/SUCCESS)
+   Main PID: 2003 (mysqld)
+     Status: "[0;1;36mServer is operational[0m"
+      Tasks: 37 (limit: 28451)
+     Memory: 518.4M
+        CPU: 10.115s
+     CGroup: /system.slice/mysqld.service
+             └─[0;38;5;245m2003 /usr/sbin/mysqld[0m
+
+Dec 18 18:38:20 var systemd[1]: Starting mysqld.service - MySQL Server...
+Dec 18 18:38:21 var (mysqld)[2003]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmysqld.service: Referenced but unset environment variable evaluates to an empty string: MYSQLD_OPTS[0m
+Dec 18 18:38:21 var systemd[1]: Started mysqld.service - MySQL Server.
